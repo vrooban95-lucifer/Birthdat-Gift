@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17203a">
+  <meta name="description" content="A little birthday world made for "Teja", with friendship and memories.">
+  <title>For Teja — A Little World of Memories - By ROOBS ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="moon"></div><div class="stars" id="stars"></div>
+    <div class="fireflies" id="fireflies"></div>
+    <div class="hill hill-back"></div><div class="hill hill-front"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Back to top">✦ a little world for Teja</a>
+    <button class="music-button" id="musicButton" type="button" aria-pressed="false">♫ Play piano</button>
+  </header>
+
+  <main>
+    <section class="countdown-screen" id="countdownScreen">
+    <div class="birthday-decor">
+  <span class="balloon">🎈</span>
+  <span class="balloon">🎈</span>
+  <span class="cake">🎂</span>
+  <span class="balloon">🎈</span>
+  <span class="cake">🧁</span>
+</div>
+      <div class="intro-badge">A tiny surprise is waiting....</div>
+      <p class="eyebrow">A story written in little moments</p>
+      <h1>Some moments are<br><span>worth waiting for.</span></h1>
+      <p class="intro">A little world filled with memories, laughter, and all the things I wanted to tell you.</p>
+      <div class="timer" aria-live="polite">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+      <p class="unlock-note" id="unlockNote">The little door opens at midnight ✨</p>
+      <button class="primary-button" id="lockedButton" type="button" disabled>🔒 A surprise is waiting</button>
+      <p class="tiny-note">A new chapter begins at 12:00 AM · India Standard Time</p>
+      <div class="scroll-cue">made with friendship <span>✿</span></div>
+    </section>
+
+    <section class="birthday-screen hidden" id="birthdayScreen">
+      <div class="hero-card">
+        <div class="hero-orbit" aria-hidden="true">✦　✧　✦</div>
+        <p class="eyebrow">Today is all about you</p>
+        <h1>Happy Birthday,<br><span>Teja!</span> 🎂</h1>
+        <p class="hero-copy">I hope your day feels like your favourite scene in a beautiful movie — warm, magical, and full of happy little surprises.</p>
+        <button class="primary-button" id="exploreButton" type="button">Enter our little world <span>→</span></button>
+      </div>
+
+      <div class="content hidden" id="content">
+        <section class="section-block">
+          <p class="eyebrow">A collection of little moments</p>
+          <h2>Our memory garden <span class="heading-flower">✿</span></h2>
+          <p class="section-copy">A scrapbook of smiles, silly moments, and memories worth keeping.</p>
+          <div class="gallery" id="gallery">
+            <figure class="polaroid">
+         <img src="memories-1.jpeg" alt="Memory 1">
+         </figure>
+
+     <figure class="polaroid">
+        <img src="memories-2.jpeg" alt="Memory 2">
+        </figure>
+
+        <figure class="polaroid">
+       <img src="memories-3.jpeg" alt="Memory 3">
+       </figure>
+          </div>
+          <p class="hint">Thank u so much for everything TEJA..!Photo Upload panla..)</p>
+        </section>
+
+        <section class="section-block quote-section">
+          <p class="eyebrow">A few words for you</p>
+          <h2>Friendship, in little sentences 💌</h2>
+          <div class="quote-card">
+            <div class="quote-mark">“</div>
+            <p id="quoteText">Good friends make ordinary moments feel extraordinary (Nammathaa...!!).</p>
+            <button class="text-button" id="nextQuote" type="button">Another little thought ↗</button>
+          </div>
+        </section>
+
+        <section class="section-block letter-section">
+          <p class="eyebrow">A note from the heart</p>
+          <h2>For you, Teja</h2>
+          <p class="section-copy">Some things are easier to write than to say.</p>
+          <button class="letter-button" id="letterButton" type="button">💌 Open your letter</button>
+          <article class="letter hidden" id="letter">
+            <p class="letter-salutation">Hey Teja,</p>
+            <p>Happy Birthday dii! I hope you know how much your friendship means to me. Thank you for the conversations that turn into memories, the laughter over the smallest things, and all those little moments that make an ordinary day special.</p>
+            <p>I may not say it every day, but I genuinely wish the best for you. May this year bring you new adventures, peaceful days, courage for your dreams, and countless reasons to smile. Keep being the kind, funny, wonderfully unique person you are.</p>
+            <p>Wherever life takes us, I hope we always get to look back at these memories and smile. You deserve a birthday as lovely as the happiness you bring to the people around you.Aproo...Tata....</p>
+            <p class="signature">With lots of friendship - Un Thambi !(Rooban),<br><span>Your friend No 1 ✨</span></p>
+          </article>
+        </section>
+        <footer>One little website. A whole lot of friendship. Happy Birthday, Teja! ✨</footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</body>
+</html>
